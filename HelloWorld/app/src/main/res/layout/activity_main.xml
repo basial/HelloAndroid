@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,48 +12,30 @@
 
     <!-- super projekt -->
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pstryczek"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/gcf"
+        android:scaleType="centerCrop" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_margin="10dp"
-        android:background="@android:color/holo_red_dark"
-        android:text="Hello"
-        android:textColor="@android:color/holo_blue_bright"
-        android:textSize="50sp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_margin="10dp"
-        android:background="@android:color/holo_green_dark"
-        android:text="Hello Hello"
-        android:textColor="@android:color/holo_blue_bright"
-        android:textSize="50sp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:orientation="horizontal"
-        android:weightSum="2">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:background="@android:color/holo_blue_bright"
-            android:text="Jestem super aplikacja!"
-            android:textColor="@android:color/black"
-            android:textSize="40sp" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:background="@android:color/holo_blue_bright"
-            android:text="Jestem super aplikacja!"
-            android:textColor="@android:color/black"
-            android:textSize="40sp" />
-    </LinearLayout>
-</LinearLayout>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Girls Code Fun jest super!"
+        android:layout_above="@id/button"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="25sp"
+        android:layout_marginBottom="20dp"
+        />
+    
+</RelativeLayout>
